@@ -1,0 +1,22 @@
+{
+  "name": "newsfeed",
+  "description": "News source from local and international sources",
+  "main": "app.js",
+  "authors": [
+    "Willard Shikami"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angularjs",
+    "newsapp",
+    "news"
+  ],
+  "homepage": "https://github.com/willardshikami/newsfeed",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
