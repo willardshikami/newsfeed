@@ -1,0 +1,24 @@
+{
+  "name": "newsfeed",
+  "version": "1.0.0",
+  "description": "News source from local and international sources",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willardshikami/newsfeed.git"
+  },
+  "keywords": [
+    "angularjs",
+    "newsapp",
+    "news"
+  ],
+  "author": "Willard Shikami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willardshikami/newsfeed/issues"
+  },
+  "homepage": "https://github.com/willardshikami/newsfeed#readme"
+}
