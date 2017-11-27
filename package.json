@@ -1,7 +1,7 @@
 {
   "name": "newsfeed",
   "version": "1.0.0",
-  "description": "NewsFeed from local and international sources",
+  "description": "newsfeed from local and international sources",
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
