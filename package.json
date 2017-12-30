@@ -1,7 +1,7 @@
 {
-  "name": "angular-quickstart",
+  "name": "newsfeed",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "news crowdsourced from local and international sources",
   "scripts": {
     "build": "tsc -p src/",
     "build:watch": "tsc -p src/ -w",
@@ -20,9 +20,6 @@
     "test:once": "karma start karma.conf.js --single-run",
     "lint": "tslint ./src/**/*.ts -t verbose"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "@angular/common": "~4.3.4",
     "@angular/compiler": "~4.3.4",
@@ -59,5 +56,19 @@
     "@types/node": "^6.0.46",
     "@types/jasmine": "2.5.36"
   },
-  "repository": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willardshikami/newsfeed.git"
+  },
+  "keywords": [
+    "angularjs",
+    "newsapp",
+    "news"
+  ],
+  "author": "Willard Shikami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willardshikami/newsfeed/issues"
+  },
+  "homepage": "https://github.com/willardshikami/newsfeed#readme"
 }
