@@ -1,83 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NewsFeed</title>
+  <meta charset="utf-8">
+  <title>Newsfeed</title>
   <base href="/">
-  <meta name="description" content="NewsFeed App" />
-  <meta name="keywords" content="newsfeed, css transitions, sidebar, side menu, slide out menu" />
-  <meta name="author" content="Moonshot Studio" />
-  <link rel="shortcut icon" href="src/assets/images/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="src/assets/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="src/assets/css/demo.css" />
-  <link rel="stylesheet" type="text/css" href="src/assets/css/component.css" />
-  <script src="src/assets/js/modernizr.custom.js"></script>
-  <!-- Polyfill(s) for older browsers -->
-  <script src="node_modules/core-js/client/shim.min.js"></script>
 
-  <script src="node_modules/zone.js/dist/zone.js"></script>
-  <script src="node_modules/systemjs/dist/system.src.js"></script>
-
-  <script src="systemjs.config.js"></script>
-  <script>
-    System.import('main.js').catch(function (err) {
-      console.error(err);
-    });
-
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-
 <body>
-  <div class="container">
-    <ul id="gn-menu" class="gn-menu-main">
-      <li class="gn-trigger">
-        <a class="gn-icon gn-icon-menu">
-          <span>Menu</span>
-        </a>
-        <nav class="gn-menu-wrapper">
-          <div class="gn-scroller">
-            <ul class="gn-menu">
-              <li class="gn-search-item">
-                <input placeholder="Search" type="search" class="gn-search">
-                <a class="gn-icon gn-icon-search">
-                  <span>Search</span>
-                </a>
-              </li>
-              <li>
-                <a class="gn-icon gn-icon-download">Downloads</a>
-              </li>
-              <li>
-                <a class="gn-icon gn-icon-cog">Settings</a>
-              </li>
-              <li>
-                <a class="gn-icon gn-icon-help">Help</a>
-              </li>
-            </ul>
-          </div>
-          <!-- /gn-scroller -->
-
-        </nav>
-      </li>
-      <li>
-        <a href="#">NewsFeed</a>
-      </li>
-    </ul>
-
-    <my-app>Loading ...</my-app>
-
-  </div>
-  <!-- /container -->
-
-
-  <script src="src/assets/js/classie.js"></script>
-  <script src="src/assets/js/gnmenu.js"></script>
-  <script>
-    new gnMenu(document.getElementById('gn-menu'));
-
-  </script>
+  <app-root></app-root>
 </body>
-
 </html>
