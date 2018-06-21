@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PostsComponent } from './posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BreakingNewsComponent } from './breaking-news/breaking-news.component';
 import { LocalNewsComponent } from './local-news/local-news.component';
 import { WorldNewsComponent } from './world-news/world-news.component';
 import { BusinessComponent } from './business/business.component';
@@ -15,13 +14,13 @@ import { TechnologyComponent } from './technology/technology.component';
 import { SportsComponent } from './sports/sports.component';
 import { ScienceComponent } from './science/science.component';
 import { HealthComponent } from './health/health.component';
+import { TopStoriesComponent } from './top-stories/top-stories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     PostsComponent,
-    BreakingNewsComponent,
     LocalNewsComponent,
     WorldNewsComponent,
     BusinessComponent,
@@ -29,7 +28,8 @@ import { HealthComponent } from './health/health.component';
     TechnologyComponent,
     SportsComponent,
     ScienceComponent,
-    HealthComponent
+    HealthComponent,
+    TopStoriesComponent
   ],
   imports: [
     BrowserModule,

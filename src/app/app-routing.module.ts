@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BreakingNewsComponent } from './breaking-news/breaking-news.component';
 import { LocalNewsComponent } from './local-news/local-news.component';
 import { WorldNewsComponent } from './world-news/world-news.component';
 import { BusinessComponent } from './business/business.component';
@@ -9,11 +8,12 @@ import { TechnologyComponent } from './technology/technology.component';
 import { SportsComponent } from './sports/sports.component';
 import { ScienceComponent } from './science/science.component';
 import { HealthComponent } from './health/health.component';
+import { TopStoriesComponent } from './top-stories/top-stories.component';
 
 const routes: Routes = [
   {
     path: "",
-    component: BreakingNewsComponent
+    component: TopStoriesComponent
   },
   {
     path: "local-news",
