@@ -1,0 +1,46 @@
+<div class="content">
+  <!--Content Head-->
+  <div class="content-head">
+    <h3>Top Stories</h3>
+    <p>Up-to-date Top Stories coverage.</p>
+  </div>
+
+  <!--Content Body 
+    *ngFor="let _story of _stories"
+  -->
+  <div class="content-body">
+    <div class="container">
+      <mat-card class="example-card">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <h5>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          </h5>
+        </mat-card-content>
+        <div class="time-posted">
+          <p>45 MINUTES AGO</p>
+        </div>
+        <mat-card-actions>
+          <hr>
+          <div class="component-footer">
+            <div class="align-left">
+              <div mat-card-avatar class="example-header-image"></div>
+            </div>
+
+            <!--<div class="align-right">
+                <div class=" views">
+                  <i class="far fa-eye fa-lg"></i>
+                  <span class="view-number">55</span>
+                </div>
+
+                <div class=" views">
+                  <i class="fas fa-share fa-lg"></i>
+                  <span class="view-number">47</span>
+                </div>
+            </div>-->
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
