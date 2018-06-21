@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*
+  ========================================
+  ANGULAR MATERIAL THEME
+  ========================================
+*/
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
 /*
   ========================================
   GENERAL VIEWPORT SETUP
@@ -61,5 +70,5 @@ app-root{
 }
 
 .content-body{
-  padding-left: 45px;
+  padding-left: 30px;
 }

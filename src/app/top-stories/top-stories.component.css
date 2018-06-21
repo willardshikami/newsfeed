@@ -1,8 +1,8 @@
-.head{
-  padding: 45px;
+.example-card {
+  max-width: 400px;
 }
 
-.head h3 p{
-  margin: 0;
-  padding: 0;
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
 }
