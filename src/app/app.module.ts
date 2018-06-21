@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from "./material.module";
 
 //Components
@@ -34,7 +34,7 @@ import { TopStoriesComponent } from './top-stories/top-stories.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    //BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     MaterialModule
