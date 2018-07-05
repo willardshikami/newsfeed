@@ -10,7 +10,7 @@ import { DataService } from '../data.service';
 export class TopStoriesComponent implements OnInit {
 
   //declare an empty stories var
-  private _stories: any;
+  _stories: any;
 
   constructor(private dataService: DataService) { }
 

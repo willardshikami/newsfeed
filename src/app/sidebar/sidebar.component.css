@@ -41,3 +41,31 @@ a{
 .icon-space{
   padding-right: 10px;
 }
+
+@media screen and (max-width: 1180px) {
+  nav{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    overflow: hidden;
+    margin: 0;
+    width: 80px;
+  }
+
+  #heading h3{
+    font-size: 13px;
+    margin: 40px 0 10px 0;
+    padding: 8px;
+    text-align: left;
+  }
+
+  ul li{
+    padding:15px 0 15px 30px;;
+  }
+
+  .link-name{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  
+}
