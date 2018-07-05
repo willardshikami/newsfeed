@@ -132,7 +132,8 @@ app-root{
 }
 
 .date{
-  font-size: 13px;
+  margin-top: 20px;
+  font-size: 10px;
 }
 
 .card:hover {
@@ -142,6 +143,8 @@ app-root{
 
 .card-footer{
   background-color: #FFFFFF;
+  margin: 0;
+  padding: 5px 0;
 }
 
 .card a{
@@ -158,19 +161,3 @@ app-root{
   CARD 
   ========================================
 */
-
-
-.header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
-
-.views{
-  color: #707070
-}
-
-.view-number{
-  padding: 10px;
-  font-weight: 700;
-}

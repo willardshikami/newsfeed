@@ -1,6 +1,27 @@
 <div class="content">
-    <div class="content-head">
-      <h3>Local News</h3>
-      <p>Up-to-date Local News coverage.</p>
+  <div class="content-head">
+    <h3>Local News</h3>
+    <p>Up-to-date Local News coverage.</p>
+  </div>
+
+  <!-- Content Body -->
+  <div class="content-body">
+    <div class="row">
+
+      <div class="col-sm-4" *ngFor="let business of businessnews">
+        <div class="card">
+          <a href={{business.url}} target="blank_">
+            <img class="card-img-top" src={{business.urlToImage}} alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text">{{business.title}}</h5>
+              <p class="date text-left">{{business.publishedAt | date }}</p>
+              <div class="card-footer">
+                <small class="text-muted">{{business.author}}</small>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+</div>

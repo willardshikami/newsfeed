@@ -3,4 +3,25 @@
       <h3>Sports News</h3>
       <p>Up-to-date Sports News coverage.</p>
     </div>
+
+      <!-- Content Body -->
+  <div class="content-body">
+    <div class="row">
+
+      <div class="col-sm-4" *ngFor="let sport of sportsNews">
+        <div class="card">
+          <a href={{sport.url}} target="blank_">
+            <img class="card-img-top" src={{sport.urlToImage}} alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text">{{sport.title}}</h5>
+              <p class="date text-left">{{sport.publishedAt | date }}</p>
+              <div class="card-footer">
+                <small class="text-muted">{{sport.author}}</small>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
