@@ -13,47 +13,18 @@
 
       <div class="col-sm-4" *ngFor="let _story of _stories">
         <div class="card">
-          <img class="card-img-top img-fluid" src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
+          <a href={{_story.url}} target="blank_">
+            <img class="card-img-top" src={{_story.urlToImage}} alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text">{{_story.title}}</h5>
+              <p class="date text-left">{{_story.publishedAt | date }}</p>
+              <div class="card-footer">
+                <small class="text-muted">{{_story.author}}</small>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-
-      <!--
-
-      <mat-card class="card " *ngFor="let _story of _stories">
-          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-            <h5>
-              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            </h5>
-          </mat-card-content>
-          <div class="time-posted">
-            <p>45 MINUTES AGO</p>
-          </div>
-          <mat-card-actions>
-            <hr>
-            <div class="component-footer">
-              <div class="align-left">
-                <div mat-card-avatar class="header-image"></div>
-              </div>
-  
-              <div class="align-right">
-                  <div class=" views">
-                    <i class="far fa-eye fa-lg"></i>
-                    <span class="view-number">55</span>
-                  </div>
-                  <div class=" views">
-                    <i class="fas fa-share fa-lg"></i>
-                    <span class="view-number">47</span>
-                  </div>
-              </div>
-          </div>
-        </mat-card-actions>
-      </mat-card>
-      -->
     </div>
   </div>
 
