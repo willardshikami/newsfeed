@@ -3,4 +3,25 @@
     <h3>World News</h3>
     <p>Up-to-date World News coverage.</p>
   </div>
+
+    <!-- Content Body -->
+    <div class="content-body">
+      <div class="row">
+  
+        <div class="col-sm-4" *ngFor="let world of worldnews">
+          <div class="card">
+            <a href={{world.url}} target="blank_">
+              <img class="card-img-top" src={{world.urlToImage}} alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text">{{ world.title}}</h5>
+                <p class="date text-left">{{ world.publishedAt | date }}</p>
+                <div class="card-footer">
+                  <small class="text-muted">{{ world.author}}</small>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>

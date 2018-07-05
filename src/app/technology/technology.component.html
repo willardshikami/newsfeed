@@ -1,6 +1,27 @@
 <div class="content">
-    <div class="content-head">
-      <h3>Technology News</h3>
-      <p>Up-to-date Technology News coverage.</p>
+  <div class="content-head">
+    <h3>Technology News</h3>
+    <p>Up-to-date Technology News coverage.</p>
+  </div>
+
+  <!-- Content Body -->
+  <div class="content-body">
+    <div class="row">
+
+      <div class="col-sm-4" *ngFor="let tech of techStories">
+        <div class="card">
+          <a href={{tech.url}} target="blank_">
+            <img class="card-img-top" src={{tech.urlToImage}} alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text">{{tech.title}}</h5>
+              <p class="date text-left">{{tech.publishedAt | date }}</p>
+              <div class="card-footer">
+                <small class="text-muted">{{tech.author}}</small>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+</div>

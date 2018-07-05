@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../data.service";
 
 @Component({
   selector: 'technology',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechnologyComponent implements OnInit {
 
-  constructor() { }
+  techStories: any
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.getTechStories()
+    .subscribe(
+      data => this.techStories = data.articles,
+      error => console.log(error)
+    )
   }
 
 }

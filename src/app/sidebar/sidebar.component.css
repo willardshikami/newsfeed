@@ -1,12 +1,14 @@
 nav{
-  padding: 30px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   min-height: 100vh; /* will cover the 100% of viewport */
   overflow: hidden;
+  margin: 0;
 }
 
 #heading h3{
-  padding: 15px;
+  font-weight: 700;
+  text-align: center;
+  padding: 40px 0 10px 0;;
 }
 
 ul{
@@ -16,10 +18,26 @@ ul{
 }
 
 ul li{
-  padding: 15px;
+  padding:15px 0 15px 30px;;
+}
+
+ul li:hover{
+  background-color: #F2F2F2; 
+}
+
+ul li:active{
+  background-color: #F2F2F2;
+}
+
+ul li:after{
+  background-color: #F2F2F2;
 }
 
 a{
   color: #111517;
   text-decoration: none;
+}
+
+.icon-space{
+  padding-right: 10px;
 }
