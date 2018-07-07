@@ -1,71 +1,88 @@
-nav{
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  min-height: 100vh; /* will cover the 100% of viewport */
+nav {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  min-height: 100vh;
+  /* will cover the 100% of viewport */
   overflow: hidden;
   margin: 0;
 }
 
-#heading h3{
-  font-weight: 700;
-  text-align: center;
-  padding: 40px 0 10px 0;;
+.short-title{
+  display: none !important;
 }
 
-ul{
+#heading h3 {
+  font-weight: 700;
+  text-align: center;
+  padding: 40px 0 10px 0;
+  ;
+}
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-ul li{
-  padding:15px 0 15px 30px;;
+ul li {
+  padding: 15px 0 15px 30px;
+  ;
 }
 
-ul li:hover{
-  background-color: #F2F2F2; 
-}
-
-ul li:active{
+ul li:hover {
   background-color: #F2F2F2;
 }
 
-ul li:after{
+ul li:active {
   background-color: #F2F2F2;
 }
 
-a{
+ul li:after {
+  background-color: #F2F2F2;
+}
+
+a {
   color: #111517;
   text-decoration: none;
 }
 
-.icon-space{
+.icon-space {
   padding-right: 10px;
 }
 
 @media screen and (max-width: 1180px) {
-  nav{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  nav {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     overflow: hidden;
     margin: 0;
     width: 80px;
   }
 
-  #heading h3{
+  #heading h3 {
     font-size: 13px;
     margin: 40px 0 10px 0;
     padding: 8px;
     text-align: left;
   }
 
-  ul li{
-    padding:15px 0 15px 30px;;
+  ul li {
+    padding: 15px 0 15px 30px;
   }
 
-  .link-name{
+  .link-name {
     display: none;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  
+@media screen and (max-width: 600px) {
+  .full-heading{
+    display: none;
+    position: relative;
+  }
+
+  .short-title{
+    text-align: center !important;
+    display: block !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+  }
 }
