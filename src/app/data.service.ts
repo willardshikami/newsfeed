@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 // stories interface
 interface Stories {
-  articles: {};
+  articles: any;
 }
 
 @Injectable({
